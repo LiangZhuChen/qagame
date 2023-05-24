@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html id="roomPage">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <link rel="stylesheet" href="/css/QAstyles.css">
+    </head>
+    <body id="QA" class="QA">
+        <div id="QAsidebar" class="QAsidebar">
+            <h3 id="roomName"></h3>
+            <h3 id="memberTitle">Members: </h3>
+            <div class="roomMembers" id="roomMembers"></div>
+            <div class="startArea" id="startArea">
+                <button id="startBtn">Start game</button>
+            </div>
+        </div>
+        <div id="questionAndOptions" class="questionAndOptions">
+            <div id="questionArea" class="questionArea">
+                <p id="waitMsg">WAIT FOR GAME TO START</p>
+            </div>
+            <div id="optionArea" class="optionArea">
+                <ol id="options" class="options"></ol>
+            </div>
+        </div>
+
+        <script src = "/socket.io/socket.io.js"></script>
+        <script type = "text/javascript" src = "js/QAroom.js"></script>
+    </body>
+</html>
